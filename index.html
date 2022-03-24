@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<!-- Metadata is data that describes data --> 
+    <meta charset="utf-8">
+	<meta name="author" content=">Euclides Paulo">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This is an example page to demonstrate usage of metadata on web pages.">
+
+<!-- Specifies relationships between the current document and an external resource -->  
+    
+	<!-- Boostrap Icon -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+	 
+	 <!-- Star Rating -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<!-- Google Fonts -->  
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+	
+	<!-- Latest compiled and minified CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	
+	<!-- Latest compiled JavaScript -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+	<!-- Specifies relationships between the current document and my directory -->  
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
+	<script src="scripts/main.js" defer></script>
+	
+	<!-- the below three lines are a fix to get HTML5 semantic elements working in old versions of Internet Explorer-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+   
+	<!-- ArcGIS API for JavaScript -->
+    <link rel="stylesheet" href="https://js.arcgis.com/4.22/esri/themes/light/main.css">
+    <script src="https://js.arcgis.com/4.22/"></script>
+	
+		<!-- Defines the document's title that is shown in a browser's title bar or a page's tab --> 
+	<title>Euclides Paulo</title> 
+	  
+  </head>
+  <body> 
+	  
+	 <!-- Here is our Header content -->
+	 <header  class="navbar navbar-expand-sm">
+		  <div class="container-fluid">
+			<a class="navbar-brand" href="#">
+				<i class="bi bi-house-fill"></i>
+			</a>
+			<div class="collapse navbar-collapse" id="mynavbar">
+			  <ul class="navbar-nav me-auto">
+				<li class="nav-item">
+				  <a class="nav-link" href="#Education"><strong>Education</strong></a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#Career"><strong>Career</strong></a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#Abilities"><strong>Abilities</strong></a>
+				</li>
+			  </ul>
+			</div>
+		  </div>
+	 </header>
+		 
+	<!-- Here is our left side content --> 
+	<aside>
+		<img src="images/image.jpg" width="100" height="100" alt="Profile"/>
+		<h4 class="center"><strong>Euclides Paulo</strong></h4>
+	   	<ul class="nav">
+			<li class="pside"><button id="telephone" class="btn"><i  class="bi bi-telephone-fill"></i></button></li>
+			<li class="pside"><button id="envelope" type="button" class="btn"><i class="bi bi-envelope-fill"></i></button></li>
+			<li class="pside"><a href="https://www.linkedin.com/in/euclides-paulo-3203b0b1" class="btn"><i  class="bi bi-linkedin"></i></a></li>
+	    </ul> 
+		<hr  class="mesu">
+	    <h6 class="hside"><strong>Language</strong></h6>
+	   	<div>
+			<div class="list-group-item-action pside"><strong>English</strong>
+				<span class="fa fa-star"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+			</div>
+			<div class="list-group-item-action pside"><strong>Spanish</strong>
+				<span class="fa fa-star"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+			</div>
+			<div class="list-group-item-action pside"><strong>Portuguese</strong>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+			</div>
+		</div> 
+		<hr class="mesu">
+		<h6 class="hside"><strong>Location</strong></h6>
+		<div  class="mesu">East Lansing, MI, USA</div>
+	   	<div id="viewDiv"></div> 
+
+      </aside>
+	  
+    <!-- Here is our page's main content -->
+      <article class="col-sm">
+		<h2><strong>About me</strong></h2>
+			<div class="row">
+			  <div class="col-sm-12">
+			  <p>I am a GIS Analyst with strong vector and raster analysis skills who is passionate about delivering projects with a positive impact. I am interested in participate in a fast-paced, highly collaborative team environment. I desire improve my skills in  Python (Arcpy numpy, pandas, Geopanda, GDAL etc. ), relational databases and interactive web mapping applications also determined to continuously learn about the latest technologies.</p>
+			  </div>
+		 </div> 
+		<hr>
+        <h2 id="Education"><strong>Education</strong></h2>
+			<div class="row">
+			  <div class="col-sm-4">
+			  <h5><strong>University of Concepción</strong></h5>
+			  <p>Mar 2015 - Sep 2020</p>
+			  </div>
+			  <div class="col-sm-8">
+			  <h6><strong>Bachelor - Geomatic Sciences</strong></h6>
+			  <p>The Geomatic Sciences aims to train professionals with a high scientific and technological profile in the use of technologies in the areas of Geographic Information Systems, land surveying, Geodesy, Cadastre, Cartography, Photogrammetry and Remote Sensing.</p>
+			  <p class="ip"><i class="bi bi-geo-alt-fill"></i>Chile</p>
+			  </div>
+			  <div class="col-sm-4">
+			  <h5><strong>University of the Sinos Valley</strong></h5>
+			  <p>Jul 2014 - Jan 2015</p>
+			  </div>
+			  <div class="col-sm-8">
+			  <h6><strong>Cartography and Surveying Engineering</strong></h6>
+			  <p>At Unisinos' Faculty of Cartographic and Surveying Engineering, you learn Remote Sensing, Photogrammetry, Digital Cartography, Environmental Analysis and 3D Visualization, among others. </p>
+			  <p class="ip"><i class="bi bi-geo-alt-fill"></i>Brazil</p>
+			  </div>
+			</div> 
+		<hr>
+		<h2 id="Career"><strong>Career</strong></h2>
+			<div class="row">
+			  <div class="col-sm-4">
+			  <h5><strong>GIS - E</strong></h5>
+			  <p>Mar 2021 - Current</p>
+			  </div>
+			  <div class="col-sm-8">
+			  <h6><strong>Vonlunteer - GIS Analyst</strong></h6>
+			  <p>Volunteering in GIS - E it allows me to work on international projects designing visual maps that clearly communicate essential information for NGOs and also join an incredible network of GIS professinals.</p>
+				  <p class="ip"><i class="bi bi-geo-alt-fill"></i>Remote | <i class="bi bi-link-45deg"></i><a class="ip" href="https://www.gis-e.org/">https://www.gis-e.org</a> </p>
+			  </div>
+				  <div class="col-sm-4">
+					  <h5><strong>Upwork</strong></h5>
+					  <p>Mar 2021 - Current</p>
+				  </div>
+				  <div class="col-sm-8">
+					  <h6><strong>Consultant - GIS Analyst/ GIS Developer</strong></h6>
+					  <p>I have a variety of skills that I offer on Upwork. My focus is GIS development and GIS analysis. The most recent project I have worked on is  helping a group of economists from Development Bank in studying urban labor markets in Brazil.</p>
+					<p class="ip"><i class="bi bi-geo-alt-fill"></i>Remote | <i class="bi bi-link-45deg"></i><a class="ip" href="https://www.upwork.com/freelancers/~01612c1d2af829c4e2">https://www.upwork.com</a> </p>
+				</div>
+			</div>
+		<hr>
+		<h2 id="Abilities"><strong>Abilities</strong></h2>
+		  <div  id="abilities" class="row">
+			  <div class="col-sm-3">
+				  <h5 class="abilities"><strong>Desktop Tools</strong></h5>
+				  <div class="abilities">
+					  <div>ArcGIS PRO</div>
+					  <div>ArcMap</div>
+					  <div>QGIS</div>
+					  <div>GeoServer</div>
+					  <div>PostgreSQL</div>
+					  <div>Google Earth PRO</div>
+					  <div>BrisCad</div>
+					  <div>Adobe Illustrator</div>
+					  <div>ENVI</div>
+				 </div>  
+			  </div>
+			  <div class="col-sm-3">
+				  <h5 class="abilities"><strong>Web Tools</strong></h5>
+			  	  <div class="abilities">
+					  <div>ArcGIS Online</div>
+					  <div>Power BI online</div>
+					  <div>Google MyMaps</div>
+					  <div>Google Earth Studio</div>
+					  <div>Diamond Map</div>
+					  <div>GitHub</div>
+					  </div> 
+			   </div>
+			  <div class="col-sm-3">
+				 <h5 class="abilities"><strong>Code</strong></h5>
+			  	 <div>
+					  <div>HTML</div>
+					  <div>CSS</div>
+					  <div>Boostrap</div>
+					  <div>JavaScript</div>
+					  <div>ArcGIS API for JS</div>
+					  <div>Python</div>
+					  <div>Matlab</div>
+					  <div>SQL</div>
+					  <div>Git</div>
+				 </div> 
+			  </div>
+		  </div> 
+    </article>
+	  
+   <!-- And here is our main footer that is used across all the pages of our website -->
+	<footer  class="col-sm">
+      <p class="foot"> © Euclides Paulo. All rights reversed.</p>
+    </footer>
+  </body>
+</html>
