@@ -60,7 +60,7 @@ p {
 /* Create two columns/boxes that floats next to each other */
 header {
   margin-top: 20px;
-  margin-right: 20px;
+  margin-right: 30px;
   width: 1000px;
   float: right;
   border-radius: 10px;	
@@ -78,7 +78,7 @@ header {
 /* Style the list inside the menu */
 aside {
   margin-top: 20px;
-  margin-left: 20px;
+  margin-left: 30px;
   padding-right: 40px;
   width: 250px;
   height: 870px;
@@ -93,8 +93,8 @@ aside {
 img {
 	border-radius: 50%;
 	margin-top: 40px;
-	align-self: center;
-	margin-left: 70px;
+justify-content: center;
+	
 }
 
 .center{
@@ -108,7 +108,7 @@ img {
 
 article {
 	margin-top: 20px;
-	margin-right: 20px;
+	margin-right: 30px;
 	width: 1000px;
 	float: right;
 	border-radius: 10px;	
@@ -124,7 +124,7 @@ article {
 /* Style the footer */
 footer {
 	margin-top: 20px;
-	margin-right: 20px;
+	margin-right: 30px;
 	margin-bottom: 20px;
 	width: 1000px;
 	height: 100;
@@ -177,7 +177,6 @@ span {
 
 #viewDiv {
   margin-left: 20px;
-  width: 210px;
   height: 250px;
 	
     }
