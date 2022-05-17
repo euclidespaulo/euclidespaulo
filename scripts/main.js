@@ -41,7 +41,9 @@ require (["esri/config", "esri/Map", "esri/views/MapView", "esri/Graphic", "esri
  graphicsLayer.add(pointGraphic);
 
   });
-  
+ 
+// ******************************Javascript
+
 // Add Click on Elements
 
 	document.getElementById("telephone").addEventListener("click", myFunction);
