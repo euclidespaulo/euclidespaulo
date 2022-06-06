@@ -15,7 +15,7 @@ require (["esri/config", "esri/Map", "esri/views/MapView", "esri/Graphic", "esri
 	
 	var view = new MapView({
 		map: map,
-		center: [-84.48, 42.73],
+		center: [-71.15, 41.70],
 		zoom: 10,
 		container: "viewDiv"   
      });
@@ -25,8 +25,8 @@ require (["esri/config", "esri/Map", "esri/views/MapView", "esri/Graphic", "esri
 	
 	var point = { //Create a point
     type: "point",
-    longitude: -84.48,
-    latitude: 42.73
+    longitude: -71.15,
+    latitude: 41.70
  };
    var simpleMarkerSymbol = {
     type: "picture-marker",
